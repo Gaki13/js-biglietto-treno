@@ -11,4 +11,29 @@
 --------------*/
 body{
     font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    background-image: url(../img/596297.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+}
+
+.row-title{
+    color: white;
+    padding: 50px 100px 25px;
+    margin-bottom: 50px;
+    background-color: red;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.row-price{
+    padding-bottom: 100px;
 }

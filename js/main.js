@@ -11,13 +11,13 @@ console.log(price);
 if (age < 18 ) {
     let discountChilds = price * 0.2
     let discountPrice = price - discountChilds;
-    document.getElementById("final-price").innerHTML = discountPrice;
+    document.getElementById("final-price").innerHTML = discountPrice + "€";
 } else if ( age >= 65 ){
     let discountOlds = price * 0.6
     let discountPrice = price - discountOlds
-    document.getElementById("final-price").innerHTML = discountPrice;
+    document.getElementById("final-price").innerHTML = discountPrice + "€";
 } else {
-    document.getElementById("final-price").innerHTML = price;
+    document.getElementById("final-price").innerHTML = price + "€";
 }
 
 //7.Assicurarsi che il prezzo finale venga mostrato in massimo 2 decimali
