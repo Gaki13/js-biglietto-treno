@@ -4,6 +4,7 @@ const Kilometers = Number(prompt ("Quanti chilometri è lungo il tragitto?"));
 const age = Number(prompt("Quanti anni ha il passeggero?"))
 //3.Calcolo il prezzo del biglietto
 let price = Kilometers * 0.21
+price = price.toFixed(2);
 console.log(price);
 //4.SE il passeggero è minorenne applico uno sconto del 20%
 //5.SE il passeggerto è over 65 anno applico uno sconto del 60%
@@ -11,10 +12,12 @@ console.log(price);
 if (age < 18 ) {
     let discountChilds = price * 0.2
     let discountPrice = price - discountChilds;
+    discountPrice = discountPrice.toFixed(2);
     document.getElementById("final-price").innerHTML = discountPrice + "€";
 } else if ( age >= 65 ){
     let discountOlds = price * 0.6
     let discountPrice = price - discountOlds
+    discountPrice = discountPrice.toFixed(2);
     document.getElementById("final-price").innerHTML = discountPrice + "€";
 } else {
     document.getElementById("final-price").innerHTML = price + "€";
